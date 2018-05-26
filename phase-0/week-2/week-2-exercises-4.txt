@@ -1,0 +1,78 @@
+[Exercises 4] Mengenal penggunaan Conditional (Switch-Case) dalam JavaScript
+
+//SET and STORE 'tanggal' with any value
+//SET and STORE 'bulan' with any value
+//SET and STORE 'tahun' with any value
+//IF 'tanggal' > 31 || 'tanggal' < 1 || 'tanggal' === ''
+//  DISPLAY 'Masukkan tanggal antara 1 - 31'
+//ENDIF
+//IF 'tahun' > 2200 || 'tahun' < 1900 || 'tahun' === ''
+//  DISPLAY 'Masukkan tahun antara 1900 - 2200'
+//ENDIF
+//CASE 
+//  bulan of
+//      1 : tanggal + ' Januari ' + tahun
+//      2 : tanggal + ' Februari ' + tahun
+//      3 : tanggal + ' Maret ' + tahun
+//      4 : tanggal + ' April ' + tahun
+//      5 : tanggal + ' Mei ' + tahun 
+//      6 : tanggal + ' Juni ' + tahun 
+//      7 : tanggal + ' Juli ' + tahun 
+//      8 : tanggal + ' Agustus ' + tahun 
+//      9 : tanggal + ' September ' + tahun 
+//      10: tanggal + ' Oktober ' + tahun
+//      11: tanggal + ' November ' + tahun 
+//      12: tanggal + ' Desember ' + tahun
+//      default: 'Masukkan bulan antara 1 - 12'
+
+var tanggal = '';
+var bulan = '';
+var tahun = '';
+
+if (tanggal > 31 || tanggal < 1 || tanggal === '') {
+    console.log('Masukkan tanggal antara 1 - 31');
+}
+if (tahun > 2200 || tahun < 1900 || tahun === '') {
+    console.log('Masukkan tahun antara 1900 - 2200');
+}
+
+switch (bulan) {
+case 1:
+    console.log(tanggal + ' Januari ' + tahun);
+    break;
+case 2:
+    console.log(tanggal + ' Februari ' + tahun);
+    break;
+case 3:
+    console.log(tanggal + ' Maret ' + tahun);
+    break;
+case 4:
+    console.log(tanggal + ' April ' + tahun);
+    break;
+case 5:
+    console.log(tanggal + ' Mei ' + tahun);
+    break;
+case 6:
+    console.log(tanggal + ' Juni ' + tahun);
+    break;
+case 7:
+    console.log(tanggal + ' Juli ' + tahun);
+    break;
+case 8:
+    console.log(tanggal + ' Agustus ' + tahun);
+    break;
+case 9:
+    console.log(tanggal + ' September ' + tahun);
+    break;
+case 10:
+    console.log(tanggal + ' Oktober ' + tahun);
+    break;
+case 11:
+    console.log(tanggal + ' November ' + tahun);
+    break;
+case 12:
+    console.log(tanggal + ' Desember ' + tahun);
+    break;
+default:
+    console.log('Masukkan bulan antara 1 - 12');
+}
